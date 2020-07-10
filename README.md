@@ -4,6 +4,8 @@
 
 My solutions to online challenges and exercises from books.
 
+Feel free to email me (See my GitHub profile) if you want me to help.
+
 ## LIST
 
 ### cryptopals
