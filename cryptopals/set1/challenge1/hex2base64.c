@@ -2,8 +2,54 @@
 #include <stdlib.h>
 #include <string.h>
 
+
 char BASE64[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 char BASE16[] = "0123456789abcdef";
+
+
+/*
+ * ex: digit2int('a', "0123456789abcdef", 16) => 10
+ * side effects: none
+ */
+char digit2int(char c, char *base, int base_n);
+
+/*
+ * ex: hex2bytes("6d757368726f6f6d", NULL) => "mushroom"
+ * side effects: puts the size of the new string in bytes_count.
+ */
+char *hex2bytes(char *str, int *bytes_count);
+
+/*
+ * takes three bytes, divide them into four six bits chunks, and
+ * output the corresponding char in BASE64
+ */
+void print_bytes2base64(char *bytes, int len);
+
+void print_usage(char *progname);
+
+
+int main(int argc, char *argv[])
+{
+    if (argc == 2 && argv[1][0] != '-') {
+        print_bytes2base64(argv[1], strlen(argv[1]));
+    }
+
+    else if (argc == 3 && !strcmp(argv[1], "-x")) {
+        int len;
+        char *bytes = hex2bytes(argv[2], &len);
+        if (!bytes)
+            return (1);
+
+        print_bytes2base64(bytes, len);
+        free(bytes);
+    }
+
+    else if (argc >= 2 && !strcmp(argv[1], "-h")) {
+        print_usage(argv[0]);
+    }
+
+    return (0);
+}
 
 char digit2int(char c, char *base, int base_n)
 {
@@ -95,27 +141,4 @@ void print_usage(char *progname)
     printf("    => SSdtIGtpbGxpbmcgeW91ciBicmFpbiBsaWtlIGEgcG9pc29ub3VzIG11c2hyb29t\n\n");
     printf("    %s -x \"49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d\"\n", progname);
     printf("    => SSdtIGtpbGxpbmcgeW91ciBicmFpbiBsaWtlIGEgcG9pc29ub3VzIG11c2hyb29t\n");
-}
-
-int main(int argc, char *argv[])
-{
-    if (argc == 2 && argv[1][0] != '-') {
-        print_bytes2base64(argv[1], strlen(argv[1]));
-    }
-
-    else if (argc == 3 && !strcmp(argv[1], "-x")) {
-        int len;
-        char *bytes = hex2bytes(argv[2], &len);
-        if (!bytes)
-            return (1);
-
-        print_bytes2base64(bytes, len);
-        free(bytes);
-    }
-
-    else if (argc >= 2 && !strcmp(argv[1], "-h")) {
-        print_usage(argv[0]);
-    }
-
-    return (0);
 }
