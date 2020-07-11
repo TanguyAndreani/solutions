@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 
 # USAGE: ./benchmark_problem2 4000000
 
