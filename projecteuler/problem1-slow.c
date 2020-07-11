@@ -1,9 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-const int n = 1000;
+int n = 1000;
 
-int main(void)
+int main(int argc, char *argv[])
 {
+    if (argc >= 2)
+        n = atoi(argv[1]);
+
     int sum;
 
     for (int i = 0; i < n; i++)

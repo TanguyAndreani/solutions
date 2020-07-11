@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /*
  * This is the most efficient way I found. I just tried to reduce as most as
@@ -17,10 +18,13 @@
  * sys 0m0,000s
  */
 
-const int n = 1000;
+int n = 1000;
 
-int main(void)
+int main(int argc, char *argv[])
 {
+    if (argc >= 2)
+        n = atoi(argv[1]);
+
     int sum = 0;
 
     for (int i = 0; i < n; i += 3)
