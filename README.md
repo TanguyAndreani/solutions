@@ -39,3 +39,5 @@ It is against the website's policy to share solutions. So I won't share them. Bu
 |App - Script|[Bash - System 2](https://www.root-me.org/fr/Challenges/App-Script/ELF32-System-2)|2020.07.11|
 |App - Script|[Perl - Command injection](https://www.root-me.org/fr/Challenges/App-Script/Perl-Command-injection)|2020.07.11|
 |App - Script|[Bash - cron](https://www.root-me.org/fr/Challenges/App-Script/Bash-cron)|2020.07.11|
+|Web - Client|[HTML - boutons désactivés](https://www.root-me.org/fr/Challenges/Web-Client/HTML-boutons-desactives)|2020.07.11|
+|Web - Client|[Javascript - Anthentification](https://www.root-me.org/fr/Challenges/Web-Client/Javascript-Authentification)|2020.07.11|
