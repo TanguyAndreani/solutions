@@ -41,3 +41,5 @@ It is against the website's policy to share solutions. So I won't share them. Bu
 |App - Script|[Bash - cron](https://www.root-me.org/fr/Challenges/App-Script/Bash-cron)|2020.07.11|
 |Web - Client|[HTML - boutons désactivés](https://www.root-me.org/fr/Challenges/Web-Client/HTML-boutons-desactives)|2020.07.11|
 |Web - Client|[Javascript - Anthentification](https://www.root-me.org/fr/Challenges/Web-Client/Javascript-Authentification)|2020.07.11|
+|Web - Client|[Javascript - Source](https://www.root-me.org/fr/Challenges/Web-Client/Javascript-Source)|2020.07.11|
+|Web - Client|[Javascript - Anthentification 2](https://www.root-me.org/fr/Challenges/Web-Client/Javascript-Authentification-2)|2020.07.11|
