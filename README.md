@@ -31,3 +31,4 @@ It is against the website's policy to share solutions. So I won't share them. Bu
 |Category|Link|Completed on|
 | ------- | ---------- | ------ |
 |App - Script|[Bash - System 1](https://www.root-me.org/fr/Challenges/App-Script/ELF32-System-1)|2020.07.11|
+|App - Script|[sudo - faiblesse de configuration](https://www.root-me.org/fr/Challenges/App-Script/sudo-faiblesse-de-configuration)|2020.07.11|
