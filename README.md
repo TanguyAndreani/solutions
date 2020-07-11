@@ -23,3 +23,11 @@ Feel free to email me (See my GitHub profile) if you want me to help.
 | ------- | -- | ------ | ---------- |
 |1|[Multiples of 3 and 5](https://projecteuler.net/problem=1)|[/projecteuler](https://github.com/TanguyAndreani/solutions/tree/master/projecteuler/)|2020.07.11|
 |2|[Even Fibonacci numbers](https://projecteuler.net/problem=2)|[/projecteuler](https://github.com/TanguyAndreani/solutions/tree/master/projecteuler/)|2020.07.11|
+
+### Root Me
+
+It is against the website's policy to share solutions. So I won't share them. But if you really need help with a problem I solved, I can help a bit.
+
+|Category|Link|Completed on|
+| ------- | ---------- | ------ |
+|App - Script|[Bash - System 1](https://www.root-me.org/fr/Challenges/App-Script/ELF32-System-1)|2020.07.11|
