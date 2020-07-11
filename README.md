@@ -19,6 +19,8 @@ Feel free to email me (See my GitHub profile) if you want me to help.
 
 ![](https://projecteuler.net/profile/lmbdfn.png)
 
+If you want to add me as a friend on Project Euler, send an email with your key.
+
 |Problem|Link|Solution|Completed on|
 | ------- | -- | ------ | ---------- |
 |1|[Multiples of 3 and 5](https://projecteuler.net/problem=1)|[/projecteuler](https://github.com/TanguyAndreani/solutions/tree/master/projecteuler/)|2020.07.11|
@@ -27,6 +29,8 @@ Feel free to email me (See my GitHub profile) if you want me to help.
 ### Root Me
 
 It is against the website's policy to share solutions. So I won't share them. But if you really need help with a problem I solved, I can help a bit.
+
+[My profile](https://www.root-me.org/lmbdfn)
 
 |Category|Link|Completed on|
 | ------- | ---------- | ------ |
