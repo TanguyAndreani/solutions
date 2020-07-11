@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# USAGE: ./benchmark_problem1 1000000
+
 make problem1
 make problem1-slow
 
