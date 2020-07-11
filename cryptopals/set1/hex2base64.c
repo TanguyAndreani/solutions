@@ -2,31 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "hex.h"
+
+#include "hex2base64.h"
 
 char BASE64[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
-char BASE16[] = "0123456789abcdef";
-
-
-/*
- * ex: digit2int('a', "0123456789abcdef", 16) => 10
- * side effects: none
- */
-char digit2int(char c, char *base, int base_n);
-
-/*
- * ex: hex2bytes("6d757368726f6f6d", NULL) => "mushroom"
- * side effects: puts the size of the new string in bytes_count.
- */
-char *hex2bytes(char *str, int *bytes_count);
-
-/*
- * takes three bytes, divide them into four six bits chunks, and
- * output the corresponding char in BASE64
- */
-void print_bytes2base64(char *bytes, int len);
-
-void print_usage(char *progname);
-
 
 int main(int argc, char *argv[])
 {
@@ -36,7 +16,7 @@ int main(int argc, char *argv[])
 
     else if (argc == 3 && !strcmp(argv[1], "-x")) {
         int len;
-        char *bytes = hex2bytes(argv[2], &len);
+        char *bytes = hex_decode(argv[2], &len);
         if (!bytes)
             return (1);
 
@@ -49,35 +29,6 @@ int main(int argc, char *argv[])
     }
 
     return (0);
-}
-
-char digit2int(char c, char *base, int base_n)
-{
-    for (int i = 0; i < base_n; i++) {
-        if (base[i] == c) {
-            return (i);
-        }
-    }
-    return (0);
-}
-
-char *hex2bytes(char *str, int *bytes_count)
-{
-    int len = strlen(str);
-
-    char *bytes = malloc(sizeof(char) * (len / 2 + 1));
-    if (!bytes)
-        return (NULL);
-
-    int j = 0;
-    for (int i = 0; i < len - 1; i += 2, j++) {
-        bytes[j] = (digit2int(str[i], BASE16, 16) << 4) +
-                    digit2int(str[i + 1], BASE16, 16);
-    }
-
-    *bytes_count = j;
-
-    return (bytes);
 }
 
 /*void print_bytes2base64(char *bytes, int len)
