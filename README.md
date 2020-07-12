@@ -14,6 +14,7 @@ Feel free to email me (See my GitHub profile) if you want me to help.
 | - | ------- | -- | ------ | ---------- |
 |1|1|[Convert hex to base64](https://cryptopals.com/sets/1/challenges/1)|[/cryptopals/set1](https://github.com/TanguyAndreani/solutions/tree/master/cryptopals/set1)|2020.07.10|
 |1|2|[Fixed XOR](https://cryptopals.com/sets/1/challenges/2)|[/cryptopals/set1](https://github.com/TanguyAndreani/solutions/tree/master/cryptopals/set1)|2020.07.11|
+|1|3|[Single-byte XOR cipher](https://cryptopals.com/sets/1/challenges/3)|[/cryptopals/set1](https://github.com/TanguyAndreani/solutions/tree/master/cryptopals/set1)|2020.07.12|
 
 ### Project Euler
 
