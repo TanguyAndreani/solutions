@@ -5,6 +5,8 @@ tests_dir=test/
 temp_file_stdout=$(mktemp)
 temp_file_stderr=$(mktemp)
 
+error_code=0
+
 for f in $(find $tests_dir -type f)
 do
 
@@ -22,7 +24,8 @@ do
     git diff --no-index $f $temp_file_stdout > /dev/null
 
     if [ $? -eq 1 ] || [ $actual_status -ne $expected_status ]
-    then 
+    then
+        error_code=1
         echo -e " (\e[31mFAILED\e[0m)"
         echo --------------------------------------
         echo -ne $command
@@ -37,5 +40,7 @@ do
         echo -e " (\e[32mSUCCESS\e[0m)"
     fi
 done
+
+exit $error_code
 
 # Author: Tanguy Andreani <tanguy.andreani@tuta.io>, Adlan Sadou <adlan.sadou@epitech.eu>
