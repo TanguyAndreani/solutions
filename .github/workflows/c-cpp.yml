@@ -17,3 +17,5 @@ jobs:
       run: make -C cryptopals/set1
     - name: cd cryptopals/set1; ./run_test.sh
       run: cd cryptopals/set1; ./run_test.sh
+    - name: make -C projecteuler
+      run: make -C projecteuler
