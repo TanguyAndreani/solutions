@@ -6,8 +6,11 @@ set -e
 make problem2
 make problem2-slow
 
-echo "./problem2"
-time ./problem2 $1
-echo
-echo "./problem2-slow"
-time ./problem2-slow $1
+if [[ ${1} != "--only-make" ]]
+then
+  echo "./problem2"
+  time ./problem2 $1
+  echo
+  echo "./problem2-slow"
+  time ./problem2-slow $1
+fi
