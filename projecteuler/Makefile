@@ -1,0 +1,1 @@
+CFLAGS=-O0 -Wall -Werror
