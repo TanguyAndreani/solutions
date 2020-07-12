@@ -1,5 +1,7 @@
 # solutions
 
+![C/C++ CI](https://github.com/TanguyAndreani/solutions/workflows/C/C++%20CI/badge.svg)
+
 ## DESCRIPTION
 
 My solutions to online challenges and exercises from books.
