@@ -1,0 +1,67 @@
+#!/usr/bin/env ruby
+
+require 'json'
+
+# limit after which we immediately throw out a string
+MAXIMUM_SCORE = 0.8
+
+# Frequency per letter in the English alphabet
+# source: https://gist.github.com/silveira/4661770
+english = {
+   'a' => 0.082, 'b' => 0.015, 'c' => 0.028, 'd' => 0.043, 'e' => 0.127, 'f' => 0.022,
+   'g' => 0.020, 'h' => 0.061, 'i' => 0.070, 'j' => 0.002, 'k' => 0.008, 'l' => 0.040,
+   'm' => 0.024, 'n' => 0.067, 'o' => 0.075, 'p' => 0.019, 'q' => 0.001, 'r' => 0.060,
+   's' => 0.063, 't' => 0.091, 'u' => 0.028, 'v' => 0.010, 'w' => 0.023, 'x' => 0.001,
+   'y' => 0.020, 'z' => 0.001
+}
+
+# we want something that looks like ["I", " ", "w", "a", "n", "t"]
+to_decode = []
+
+s = ARGV[0].split('')
+while s.any?
+  to_decode.append((s.shift.to_i(16) << 4) + s.shift.to_i(16))
+end
+
+# return a hash with the frequency of each letters in s
+def compute_frequency(s, letters)
+  {}.tap do |frequencies|
+    letters.each do |c|
+      frequencies[c] = s.count(c).to_f / s.length.to_f
+    end
+  end
+end
+
+# rate a sentence against a language's letters frequencies
+def compute_score(s, freqs)
+  target_frequencies = compute_frequency(s, freqs.keys)
+
+  freqs.reduce(0.0) { |acc, kv|
+    k, v = kv
+    acc + (freqs[k] - target_frequencies[k]).abs
+  }
+end
+
+# bruteforce of every 255 solutions
+solutions = []
+
+255.times do |key|
+  text = to_decode.dup.map { |c|
+    dec_c = (c ^ key).chr
+  }
+  next if text.nil?
+  score = compute_score(text, english)
+  solutions.append ({
+    'text': text.join(''),
+    'score': score,
+    'key': key
+  }) if score <= MAXIMUM_SCORE # filter out a bunch of obvious fails
+end
+
+# best solution is the one with the lesser score
+best_solution = solutions.reduce(solutions.first) { |min, _next|
+  (min[:score] >= _next[:score]) ? _next : min
+}
+
+# outputs result in json format
+puts best_solution.to_json
