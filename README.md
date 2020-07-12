@@ -46,3 +46,4 @@ It is against the website's policy to share solutions. So I won't share them. Bu
 |App - Script|[Powershell - Command injection](https://www.root-me.org/fr/Challenges/App-Script/Powershell-Command-injection)|2020.07.11|
 |Cryptanalyse|[Encodage - ASCII (x/)](https://www.root-me.org/fr/Challenges/Cryptanalyse/Encodage-ASCII)|2020.07.11|
 |App - Script|[Python - input()](https://www.root-me.org/fr/Challenges/App-Script/Python-input)|2020.07.12|
+|App - Script|[Python - pickle](https://www.root-me.org/fr/Challenges/App-Script/Python-pickle)|2020.07.12|
