@@ -1,0 +1,8 @@
+- https://www.hackerrank.com
+- https://mathschallenge.net
+- https://projecteuler.net
+- https://www.root-me.org
+- https://pwnable.tw
+- https://pwnable.kr
+- https://www.ic.unicamp.br/~meidanis/courses/mc336/2006s2/funcional/L-99_Ninety-Nine_Lisp_Problems.html
+- https://cryptopals.com
