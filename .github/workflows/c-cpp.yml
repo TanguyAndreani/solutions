@@ -19,5 +19,5 @@ jobs:
       run: cd cryptopals/set1; ./run_test.sh
     - name: make -C projecteuler
       run: make -C projecteuler
-    - name: make -C projecteuler test_suite; ./test_suite
-      run: make -C projecteuler test_suite; ./test_suite
+    - name: make -C projecteuler test_suite; ./projecteuler/test_suite
+      run: make -C projecteuler test_suite; ./projecteuler/test_suite
