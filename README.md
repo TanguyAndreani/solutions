@@ -53,3 +53,12 @@ It is against the website's policy to share solutions. So I won't share them. Bu
 |App - Système|[ELF x86 - Stack buffer overflow basic 1](https://www.root-me.org/fr/Challenges/App-Systeme/ELF-x86-Stack-buffer-overflow-basic-1)|2020.07.12|
 |App - Système|[ELF x86 - Stack buffer overflow basic 2](https://www.root-me.org/fr/Challenges/App-Systeme/ELF-x86-Stack-buffer-overflow-basic-2)|2020.07.12|
 
+### Exercism
+
+Just discovered an old account :)
+
+|Category|Link|Completed on|
+| ------- | ---------- | ------ |
+|Ruby|[Hello World](https://exercism.io/my/tracks/ruby)|2019.06.14|
+|Ruby|[Two Fer](https://exercism.io/my/tracks/ruby)|2019.06.14|
+|Ruby|[Acronym](https://exercism.io/my/tracks/ruby)|2019.06.14|
