@@ -6,3 +6,5 @@
 - https://pwnable.kr
 - https://www.ic.unicamp.br/~meidanis/courses/mc336/2006s2/funcional/L-99_Ninety-Nine_Lisp_Problems.html
 - https://cryptopals.com
+- https://www.wolframalpha.com/problem-generator
+- https://www.mathsisfun.com/worksheets
