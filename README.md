@@ -29,6 +29,7 @@ If you want to add me as a friend on Project Euler, send an email with your key.
 | ------- | -- | ------ | ---------- |
 |1|[Multiples of 3 and 5](https://projecteuler.net/problem=1)|[/projecteuler](https://github.com/TanguyAndreani/solutions/tree/master/projecteuler/)|2020.07.11|
 |2|[Even Fibonacci numbers](https://projecteuler.net/problem=2)|[/projecteuler](https://github.com/TanguyAndreani/solutions/tree/master/projecteuler/)|2020.07.11|
+|3|[Largest Prime Factor](https://projecteuler.net/problem=3)|[/projecteuler](https://github.com/TanguyAndreani/solutions/tree/master/projecteuler/)|2020.07.13|
 
 ### Root Me
 
