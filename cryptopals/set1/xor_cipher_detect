@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+
+require 'json'
+
+filename = ARGV[0]
+
+best_solution = { "score" => 9999 }
+line_count = 0
+File.readlines(filename).each { |line|
+    line_count += 1
+
+    result = `./xor_cipher_decode #{line}`.chomp
+    next if result.empty?
+    
+    current_solution = JSON.load(result)
+
+    if current_solution["score"] < best_solution["score"]
+        best_solution = current_solution
+        best_solution["line"] = line_count
+    end
+}
+
+puts best_solution.to_json

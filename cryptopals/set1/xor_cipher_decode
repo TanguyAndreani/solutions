@@ -47,15 +47,24 @@ solutions = []
 
 255.times do |key|
   text = to_decode.dup.map { |c|
-    dec_c = (c ^ key).chr
+    dec_c = (c ^ key)
+
+    # after a few benchmarks I noticed that this line leads to a
+    # few seconds gain in ./xor_cipher_detect data/4.txt
+    break if (dec_c < 32 || dec_c > 127) && dec_c != "\n".ord
+
+    dec_c.chr
   }
   next if text.nil?
+
   score = compute_score(text, english)
-  solutions.append ({
-    'text': text.join(''),
-    'score': score,
-    'key': key
-  }) if score <= MAXIMUM_SCORE # filter out a bunch of obvious fails
+  if score <= MAXIMUM_SCORE  # filter out a bunch of obvious fails
+    solutions.append ({
+      'text': text.join(''),
+      'score': score,
+      'key': key
+    })
+  end
 end
 
 # best solution is the one with the lesser score
@@ -64,4 +73,8 @@ best_solution = solutions.reduce(solutions.first) { |min, _next|
 }
 
 # outputs result in json format
-puts best_solution.to_json
+begin
+  puts best_solution.to_json if !best_solution.nil?
+rescue Encoding::UndefinedConversionError
+  nil
+end
