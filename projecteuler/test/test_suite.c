@@ -7,28 +7,28 @@
 int main()
 {
     test_case("Min", {
-        expect("min(1, 2) = 1", min(1, 2) == 1);
-        expect("min(132, -8) = -8", min(132, -8) == -8);
-        expect("min(0, 0) = 0", min(0, 0) == 0);
+        expect("minl(1, 2) = 1", minl(1, 2) == 1);
+        expect("minl(132, -8) = -8", minl(132, -8) == -8);
+        expect("minl(0, 0) = 0", minl(0, 0) == 0);
     });
 
     test_case("Max", {
-        expect("max(1, 2) = 2", max(1, 2) == 2);
-        expect("max(132, -8) = 132", max(132, -8) == 132);
-        expect("max(0, 0) = 0", max(0, 0) == 0);
+        expect("maxl(1, 2) = 2", maxl(1, 2) == 2);
+        expect("maxl(132, -8) = 132", maxl(132, -8) == 132);
+        expect("maxl(0, 0) = 0", maxl(0, 0) == 0);
     });
 
     test_case("Abs", {
-        expect("abs(1) = 1", abs(1) == 1);
-        expect("abs(-10) = 10", abs(-10) == 10);
+        expect("absl(1) = 1", absl(1) == 1);
+        expect("absl(-10) = 10", absl(-10) == 10);
     });
 
     test_case("Abs", {
-        expect("abs(1) = 1", abs(1) == 1);
-        expect("abs(-10) = 10", abs(-10) == 10);
+        expect("absl(1) = 1", absl(1) == 1);
+        expect("absl(-10) = 10", absl(-10) == 10);
     });
 
-    int q, r;
+    long q, r;
 
     test_case("Euclidean division", {
         euclidean_division(32, 3, &q, &r);
