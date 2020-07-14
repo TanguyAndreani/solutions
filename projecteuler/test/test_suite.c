@@ -48,5 +48,17 @@ int main()
         expect("gcd(180, -36) = 36", gcd(180, -36) == 36);
     });
 
+    test_case("Sum", {
+        expect("sum(3) = 6", sum(3) == 6);
+        expect("sum(-3) = 0 (undefined)", sum(-3) == 0);
+    });
+
+    test_case("Sum of multiples", {
+        expect("compatible with problem 1",
+            sum_of_multiples(3, 999) +
+            sum_of_multiples(5, 999) -
+            sum_of_multiples(15, 999) == 233168);
+    });
+
     return 0;
 }
