@@ -54,6 +54,9 @@ It is against the website's policy to share solutions. So I won't share them. Bu
 |App - Script|[Python - pickle](https://www.root-me.org/fr/Challenges/App-Script/Python-pickle)|2020.07.12|
 |App - Système|[ELF x86 - Stack buffer overflow basic 1](https://www.root-me.org/fr/Challenges/App-Systeme/ELF-x86-Stack-buffer-overflow-basic-1)|2020.07.12|
 |App - Système|[ELF x86 - Stack buffer overflow basic 2](https://www.root-me.org/fr/Challenges/App-Systeme/ELF-x86-Stack-buffer-overflow-basic-2)|2020.07.12|
+|App - Système|[PE32 - Stack buffer overflow basic](https://www.root-me.org/fr/Challenges/App-Systeme/PE32-Stack-buffer-overflow-basic?action_solution=voir&debut_affiche_solutions=5#pagination_affiche_solutions)|2020.07.14|
+
+
 
 ### Exercism
 
