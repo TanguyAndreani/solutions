@@ -10,3 +10,4 @@
 - https://www.mathsisfun.com/worksheets
 - https://exercism.io
 - https://www.xorpd.net
+- https://challenges.re
