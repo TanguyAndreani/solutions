@@ -9,7 +9,7 @@
 
 Two of the first consecutive terms of the fibonacci sequence are 2 and 3.
 
-So we can fillin the following table:
+So, knowing that a term is just the sum of the two previous ones, we can fillin the following table:
 
 |fib(n)|even or odd|
 |-|-|
@@ -35,3 +35,6 @@ In fact we could have built the same table without the first column:
 |even|
 |odd|
 |...|
+
+And then, because 2 and 3 are consecutive terms of Fibonacci sequence,
+we know that the whole sequence replicate this structure.
