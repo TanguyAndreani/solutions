@@ -20,9 +20,9 @@ So we can fillin the following table:
 |13|odd|
 |21|...|
 
-Is stopped at 13 because we are now back in the initial situation
+I stopped at 13 because we are now back in the initial situation
 (an odd number following an even number). And because next state
-depends only on the previous one, we're going to cycle around
+depends only on the previous one, we're now going to eternally cycle around
 sequences of odd, then even, then odd, then odd, then even, ...
 
 In fact we could have built the same table without the first column:
