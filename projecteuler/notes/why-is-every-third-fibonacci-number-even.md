@@ -1,7 +1,11 @@
-Two rules:
+# Why is every third Fibonacci number even?
+
+### Two rules
 
 1. even + even is even, odd + odd is even,
 2. even + odd is odd
+
+### Just apply them
 
 Two of the first consecutive terms of the fibonacci sequence are 2 and 3.
 
