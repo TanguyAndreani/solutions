@@ -73,3 +73,9 @@ Just discovered an old account :)
 |Ruby|[Hello World](https://exercism.io/my/tracks/ruby)|2019.06.14|
 |Ruby|[Two Fer](https://exercism.io/my/tracks/ruby)|2019.06.14|
 |Ruby|[Acronym](https://exercism.io/my/tracks/ruby)|2019.06.14|
+
+### 99 Lisp Problems
+
+[Link](https://www.ic.unicamp.br/~meidanis/courses/mc336/2006s2/funcional/L-99_Ninety-Nine_Lisp_Problems.html)
+
+Progress: 3/99
