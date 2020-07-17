@@ -79,3 +79,5 @@ Just discovered an old account :)
 [Link](https://www.ic.unicamp.br/~meidanis/courses/mc336/2006s2/funcional/L-99_Ninety-Nine_Lisp_Problems.html)
 
 Progress: 3/99
+
+- 2020.07.17: 3
