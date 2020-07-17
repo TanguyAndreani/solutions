@@ -11,3 +11,10 @@
       (if (null? (cddr ls))
           ls
           (my-last (cdr ls)))))
+
+(define (element-at ls n)
+  (if (or (not (list? ls)) (null? ls))
+      'undefined
+      (if (zero? (- n 1))
+          (car ls)
+          (element-at (cdr ls) (- n 1)))))

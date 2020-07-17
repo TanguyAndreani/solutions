@@ -17,8 +17,7 @@
         (display 'failed)
         (newline)
         (display quoted-expr)
-        (newline)
-        (exit))))
+        (newline))))
 
 (define-syntax assert
   (syntax-rules ()
@@ -53,3 +52,7 @@
 (assert 'my-but-last-not-a-list
   (equal? (my-but-last 'hello)
           'undefined))
+
+(assert 'element-at-element-exit
+  (equal? (element-at '(4 3 2 1) 3)
+          2))
