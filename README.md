@@ -81,3 +81,10 @@ Just discovered an old account :)
 Progress: 3/99
 
 - 2020.07.17: 3
+
+### pwnable.kr
+
+|Title|Completed on|
+| ------- | ------ |
+|fd|2020.07.18|
+|col|2020.07.18|
