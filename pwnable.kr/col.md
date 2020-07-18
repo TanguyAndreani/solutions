@@ -44,6 +44,6 @@ to take the endianness of the machine into account.
 ## command
 
 ```bash
-echo $(ruby -e 'print "\x06\xc5\xce\xc8".reverse*4 + "\x06\xc5\xce\xcc".reverse') \
+ruby -e 'print "\x06\xc5\xce\xc8".reverse*4 + "\x06\xc5\xce\xcc".reverse' \
   | ssh col@pwnable.kr -p2222 "xargs ./col"
 ```
