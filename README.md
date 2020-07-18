@@ -80,7 +80,11 @@ Just discovered an old account :)
 
 Progress: 3/99
 
-- 2020.07.17: 3
+#### By date
+
+|Date|Number of problems|
+| --- | --- |
+|2020.07.17|3|
 
 ### pwnable.kr
 
