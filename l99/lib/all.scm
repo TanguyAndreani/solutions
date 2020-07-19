@@ -18,3 +18,8 @@
       (if (zero? (- n 1))
           (car ls)
           (element-at (cdr ls) (- n 1)))))
+
+(define (my-length ls)
+  (if (null? ls)
+      0
+      (+ 1 (my-length (cdr ls)))))
