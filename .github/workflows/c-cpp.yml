@@ -21,3 +21,5 @@ jobs:
       run: make -C projecteuler
     - name: make -C projecteuler test_suite; ./projecteuler/test_suite
       run: make -C projecteuler test_suite; ./projecteuler/test_suite
+    - name: install racket
+      run: sudo apt install drracket -y
