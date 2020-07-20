@@ -66,13 +66,15 @@ It is against the website's policy to share solutions. So I won't share them. Bu
 
 ### Exercism
 
-Just discovered an old account :)
+Just discovered an old account :) [My solutions](https://exercism.io/profiles/TanguyAndreani)
 
 |Category|Link|Completed on|
 | ------- | ---------- | ------ |
 |Ruby|[Hello World](https://exercism.io/my/tracks/ruby)|2019.06.14|
 |Ruby|[Two Fer](https://exercism.io/my/tracks/ruby)|2019.06.14|
 |Ruby|[Acronym](https://exercism.io/my/tracks/ruby)|2019.06.14|
+|Ruby|[Resistor Color Duo](https://exercism.io/my/tracks/ruby)|2020.06.20|
+|Ruby|[High Scores](https://exercism.io/my/tracks/ruby)|2020.06.20|
 
 ### 99 Lisp Problems
 
