@@ -80,8 +80,6 @@ Just discovered an old account :) [My solutions](https://exercism.io/profiles/Ta
 
 [Link](https://www.ic.unicamp.br/~meidanis/courses/mc336/2006s2/funcional/L-99_Ninety-Nine_Lisp_Problems.html)
 
-Progress: 3/99
-
 #### By date
 
 |Date|Number of problems|
