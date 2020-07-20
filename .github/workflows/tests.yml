@@ -22,4 +22,6 @@ jobs:
     - name: make -C projecteuler test_suite; ./projecteuler/test_suite
       run: make -C projecteuler test_suite; ./projecteuler/test_suite
     - name: install racket
-      run: sudo add-apt-repository ppa:plt/racket && sudo apt-get update && sudo apt install drracket -y
+      run: sudo add-apt-repository ppa:plt/racket && sudo apt-get update && sudo apt install racket -y
+    - name: l99 tests
+      run: (cd l99; plt-r5rs test_all.scm) | grep -v failed
