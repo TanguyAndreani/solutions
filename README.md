@@ -63,7 +63,8 @@ It is against the website's policy to share solutions. So I won't share them. Bu
 |Web - Serveur|[HTTP - Open redirect](https://www.root-me.org/fr/Challenges/Web-Serveur/HTTP-Open-redirect)|2020.07.16|
 |App - Système|[ELF x64 - Stack buffer overflow - basic](https://www.root-me.org/fr/Challenges/App-Systeme/ELF-x64-Stack-buffer-overflow-basic)|2020.07.16|
 |Stéganographie|[Gunnm](https://www.root-me.org/fr/Challenges/Steganographie/Gunnm)|2020.07.23|
-
+|Stéganographie|[Pas très carré](https://www.root-me.org/fr/Challenges/Steganographie/Pas-tres-carre)|2020.07.23|
+|App - Système|[ELF x86 - Race condition](https://www.root-me.org/fr/Challenges/App-Systeme/ELF-x86-Race-condition)|2020.07.23|
 
 ### Exercism
 
