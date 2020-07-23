@@ -75,9 +75,9 @@ Just discovered an old account :) [My solutions](https://exercism.io/profiles/Ta
 |Ruby|[Hello World](https://exercism.io/my/tracks/ruby)|2019.06.14|
 |Ruby|[Two Fer](https://exercism.io/my/tracks/ruby)|2019.06.14|
 |Ruby|[Acronym](https://exercism.io/my/tracks/ruby)|2019.06.14|
-|Ruby|[Resistor Color Duo](https://exercism.io/my/tracks/ruby)|2020.06.20|
-|Ruby|[High Scores](https://exercism.io/my/tracks/ruby)|2020.06.20|
-|x86-64 Assembly|[Hello World](https://exercism.io/my/tracks/x86-64-assembly)|2020.06.20|
+|Ruby|[Resistor Color Duo](https://exercism.io/my/tracks/ruby)|2020.07.20|
+|Ruby|[High Scores](https://exercism.io/my/tracks/ruby)|2020.07.20|
+|x86-64 Assembly|[Hello World](https://exercism.io/my/tracks/x86-64-assembly)|2020.07.20|
 
 ### 99 Lisp Problems
 
