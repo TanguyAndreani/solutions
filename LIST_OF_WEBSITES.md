@@ -16,3 +16,4 @@
 ## Off Topic but interesting nonetheless
 
 - http://ai.berkeley.edu/lecture_videos.html
+- https://inst.eecs.berkeley.edu//~cs184/fa12/onlinelectures1.html
