@@ -12,3 +12,7 @@
 - https://www.xorpd.net
 - https://challenges.re
 - https://adventofcode.com
+
+## Off Topic but interesting nonetheless
+
+- http://ai.berkeley.edu/lecture_videos.html
