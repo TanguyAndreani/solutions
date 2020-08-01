@@ -19,3 +19,4 @@
 - https://inst.eecs.berkeley.edu//~cs184/fa12/onlinelectures1.html
 - https://github.com/ossu/computer-science
 - http://academictorrents.com/details/da90dedfb78190e5c62af1ad40a2413cb918457f
+- https://github.com/karan/Projects
