@@ -1,3 +1,5 @@
+## Challenges
+
 - https://www.hackerrank.com
 - https://mathschallenge.net
 - https://projecteuler.net
@@ -12,11 +14,11 @@
 - https://www.xorpd.net
 - https://challenges.re
 - https://adventofcode.com
+- https://github.com/karan/Projects
 
-## Off Topic but interesting nonetheless
+## Courses
 
 - http://ai.berkeley.edu/lecture_videos.html
 - https://inst.eecs.berkeley.edu//~cs184/fa12/onlinelectures1.html
 - https://github.com/ossu/computer-science
 - http://academictorrents.com/details/da90dedfb78190e5c62af1ad40a2413cb918457f
-- https://github.com/karan/Projects
