@@ -8,7 +8,8 @@ Exercises for this chapter are on page 8 of the book.
 
 **Exercise 1.1**: Modify the echo program to also print `os.Args[0]`, the name of the command that invoked it.
 
-**Solution**: Just change `os.Args[1:]` to `os.Args[0:]`.
+**Solution**: Just change `os.Args[1:]` to `os.Args[0:]` which can then be
+simplified to `os.Args`.
 
 **Exercise 1.2**: Modify the echo program to print the index and value of its arguments, one per line.
 
@@ -16,8 +17,8 @@ Exercises for this chapter are on page 8 of the book.
 
 ```go
 func main() {
-  for i := 0; i < len(os.Args); i = i + 1 {
-    fmt.Println(i, os.Args[i])
+  for idx, arg := range os.Args {
+    fmt.Println(idx, arg)
   }
 }
 ```
