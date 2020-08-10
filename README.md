@@ -10,6 +10,10 @@ Feel free to email me (See my GitHub profile) if you want me to help.
 
 ## LIST
 
+### books
+
+- [The Go Programming Language](books/tgpl.markdown)
+
 ### cryptopals
 
 |Set|Challenge|Link|Solution|Language|Completed on|
