@@ -12,7 +12,12 @@ Feel free to email me (See my GitHub profile) if you want me to help.
 
 ### books
 
+Items which are not clickable represeng books I plan on doing.
+
 - [The Go Programming Language](books/tgpl.markdown)
+- Lisp in Small Pieces
+- Operating Systeme: Three Easy Pieces
+- The Algorithms Design Manual (in a separate repo)
 
 ### cryptopals
 
