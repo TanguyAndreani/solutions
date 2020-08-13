@@ -10,7 +10,7 @@ Feel free to email me (See my GitHub profile) if you want me to help.
 
 ## LIST
 
-### books
+### Books
 
 Items which are not clickable represeng books I plan on doing.
 
@@ -19,7 +19,7 @@ Items which are not clickable represeng books I plan on doing.
 - Operating Systeme: Three Easy Pieces
 - The Algorithms Design Manual (in a separate repo)
 
-### cryptopals
+### Cryptopals
 
 |Set|Challenge|Link|Solution|Language|Completed on|
 | - | ------- | -- | ------ | ------ | ---------- |
@@ -40,7 +40,7 @@ If you want to add me as a friend on Project Euler, send an email with your key.
 |2|[Even Fibonacci numbers](https://projecteuler.net/problem=2)|[/projecteuler](https://github.com/TanguyAndreani/solutions/tree/master/projecteuler/)|2020.07.11|
 |3|[Largest Prime Factor](https://projecteuler.net/problem=3)|[/projecteuler](https://github.com/TanguyAndreani/solutions/tree/master/projecteuler/)|2020.07.13|
 
-### Root Me
+### Root-Me.Org
 
 It is against the website's policy to share solutions. So I won't share them. But if you really need help with a problem I solved, I can help a bit.
 
