@@ -1,6 +1,6 @@
 # solutions
 
-![C/C++ CI](https://github.com/TanguyAndreani/solutions/workflows/C/C++%20CI/badge.svg)
+![C/C++ CI](https://github.com/TanguyAndreani/solutions/workflows/build/badge.svg)
 
 ## DESCRIPTION
 
