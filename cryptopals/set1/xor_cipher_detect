@@ -4,7 +4,7 @@ require 'json'
 
 filename = ARGV[0]
 
-best_solution = { "score" => 9999 }
+best_solution = { "score" => 999.0 }
 line_count = 0
 File.readlines(filename).each { |line|
     line_count += 1
@@ -12,19 +12,16 @@ File.readlines(filename).each { |line|
     result = `./xor_cipher_decode #{line}`
     next if result.empty?
 
-    begin
-      result = result.split("\n")
-    rescue
-      next
-    end
+    result = result.split("\n")
 
-    current_solution = Hash.new
-    current_solution["key"] = result[0].to_i
-    current_solution["score"] = result[1].to_f
-    current_solution["text"] = result.slice(2..-1).join('\n')
+    current_score = result[1].to_f
 
-    if current_solution["score"] < best_solution["score"]
-        best_solution = current_solution
+    if current_score < best_solution["score"]
+        best_solution = {
+          "key" => result[0].to_i,
+          "score" => result[1].to_f,
+          "text" => result.slice(2..-1).join('\n')
+        }
         best_solution["line"] = line_count
     end
 }
