@@ -5,6 +5,9 @@
 
 #include "hex.h"
 
+/* scores above which we just ignore the string */
+const float limit = 8.0;
+
 /*
  * Frequency per letter in the English alphabet
  * source: https://gist.github.com/silveira/4661770
@@ -79,7 +82,9 @@ float compute_score(float *sentence_frequencies, float *language_frequencies, ch
 
 void xor_decode(char *s, int slen, char *alphabet, float *language_frequencies)
 {
-    float scores[256] = {0.0};
+    float scores[256];
+    for (int i = 0; i < 256; i++)
+        scores[i] = 999.0;
 
     int bufsize = slen + 1;
     char *buf = malloc(bufsize);
@@ -112,7 +117,7 @@ void xor_decode(char *s, int slen, char *alphabet, float *language_frequencies)
         continue;
 
 next:
-        scores[key] = 999.0;
+        ;
     }
 
     int min_score_key = 0;
@@ -122,7 +127,7 @@ next:
         }
     }
 
-    if (scores[min_score_key] >= 8.0) {
+    if (scores[min_score_key] >= limit) {
         free(buf);
         return;
     }
