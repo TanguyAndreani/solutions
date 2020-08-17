@@ -2,11 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "hex.h"
+#include "include/hex.h"
+#include "include/bytes_to_b64.h"
 
-#include "hex2base64.h"
-
-char BASE64[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+void print_usage(char *progname);
 
 int main(int argc, char *argv[])
 {
@@ -42,61 +41,6 @@ int main(int argc, char *argv[])
     }
 
     return (0);
-}
-
-/*void print_bytes2base64(char *bytes, int len)
-{
-    int i = 0;
-    for (; i < len; i += 3) {
-        int b1 = bytes[i];
-        int b2 = (i + 1 >= len) ? 0 : bytes[i + 1];
-        int b3 = (i + 2 >= len) ? 0 : bytes[i + 2];
-
-        int three_in_one = (b1 << 16) + (b2 << 8) + b3;
-
-        int n0 = (three_in_one >> 18) & 63;
-        int n1 = (three_in_one >> 12) & 63;
-        int n2 = (three_in_one >> 6) & 63;
-        int n3 = (three_in_one) & 63;
-
-        putchar(BASE64[n0]);
-        putchar(BASE64[n1]);
-        putchar((i + 1 >= len) ? '=' : BASE64[n2]);
-        putchar((i + 2 >= len) ? '=' : BASE64[n3]);
-    }
-
-    putchar('\n');
-}*/
-
-char *bytes2base64(char *bytes, int len)
-{
-    char *buf = malloc(len * (4.0/3.0) + 1);
-    if (!buf)
-        return NULL;
-
-    int i = 0;
-    int buf_idx = 0;
-    for (; i < len; i += 3) {
-        int bs[3];
-        bs[0] = bytes[i];
-        bs[1] = (i + 1 >= len) ? 0 : bytes[i + 1];
-        bs[2] = (i + 2 >= len) ? 0 : bytes[i + 2];
-
-        int ss[4];
-        ss[0] = (bs[0] >> 2);
-        ss[1] = ((bs[0] & 3) << 4) + (bs[1] >> 4);
-        ss[2] = ((bs[1] & 15) << 2) + (bs[2] >> 6);
-        ss[3] = bs[2] & 63;
-
-        buf[buf_idx++] = BASE64[ss[0]];
-        buf[buf_idx++] = BASE64[ss[1]];
-        buf[buf_idx++] = (i + 1 >= len) ? '=' : BASE64[ss[2]];
-        buf[buf_idx++] = (i + 2 >= len) ? '=' : BASE64[ss[3]];
-    }
-
-    buf[buf_idx] = '\0';
-
-    return buf;
 }
 
 void print_usage(char *progname)

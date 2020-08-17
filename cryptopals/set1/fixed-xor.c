@@ -2,9 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "hex.h"
+#include "include/hex.h"
+#include "include/xor_string_in_place.h"
 
-#include "fixed-xor.h"
+void print_usage(char *progname);
 
 int main(int argc, char *argv[])
 {
@@ -23,7 +24,7 @@ int main(int argc, char *argv[])
         if (len2 < len1)
             return (2);
 
-        xor_strings_in_place(bytes1, bytes2, len1);
+        xor_string_in_place(bytes1, bytes2, len1);
 
         int result_len;
         char *result = hex_encode(bytes1, &result_len, len1);
@@ -39,13 +40,6 @@ int main(int argc, char *argv[])
     }
 
     return (0);
-}
-
-void xor_strings_in_place(char *dest, char *src, int dest_len)
-{
-    for (int i = 0; i < dest_len; i++) {
-        dest[i] ^= src[i];
-    }
 }
 
 void print_usage(char *progname)
