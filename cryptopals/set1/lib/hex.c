@@ -2,24 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "../include/utils.h"
+
 char BASE16[] = "0123456789abcdef";
-
-int digit_to_int(char c, char *base, int base_n)
-{
-    for (int i = 0; i < base_n; i++) {
-        if (base[i] == c) {
-            return (i);
-        }
-    }
-    return (0);
-}
-
-char int_to_digit(int c, char *base, int base_n)
-{
-    if (c >= 0 && c <= base_n)
-        return (base[c]);
-    return (0);
-}
 
 char *hex_decode(char *str, int *bytes_count)
 {
@@ -32,8 +17,8 @@ char *hex_decode(char *str, int *bytes_count)
 
     int j = 0;
     for (int i = 0; i < len - 1; i += 2, j++) {
-        bytes[j] = (digit_to_int(str[i], BASE16, 16) << 4) +
-                    digit_to_int(str[i + 1], BASE16, 16);
+        bytes[j] = (find_first_occurence_position(str[i], BASE16, 16) << 4) +
+                    find_first_occurence_position(str[i + 1], BASE16, 16);
     }
 
     bytes[j] = '\0';
@@ -52,8 +37,8 @@ char *hex_encode(char *str, int *bytes_count, int len)
 
     int j = 0, i = 0;
     for (; i < result_len - 1; i += 2, j++) {
-        bytes[i] = int_to_digit(str[j] >> 4, BASE16, 16);
-        bytes[i + 1] = int_to_digit(str[j] & 15, BASE16, 16);
+        bytes[i] = get_nth_or_zero(str[j] >> 4, BASE16, 16);
+        bytes[i + 1] = get_nth_or_zero(str[j] & 15, BASE16, 16);
     }
 
     bytes[i] = '\0';

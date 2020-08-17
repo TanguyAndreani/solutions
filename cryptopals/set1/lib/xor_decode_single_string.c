@@ -4,28 +4,11 @@
 #include <stdlib.h>
 
 #include "../include/hex.h"
+#include "../include/utils.h"
 #include "../include/xor_decode_single_string.h"
 
 /* scores above which we just ignore the string */
 const float limit = 8.0;
-
-char downcase(char c)
-{
-    if (c > 'A' && c < 'Z') {
-        return c - ('A' - 'a');
-    }
-    return c;
-}
-
-int count_letter(char *s, char letter)
-{
-    int count = 0;
-    for (int i = 0; s[i]; i++) {
-        if (s[i] == letter)
-            count++;
-    }
-    return count;
-}
 
 void compute_frequency(char *s, char *letters, float *dest)
 {
