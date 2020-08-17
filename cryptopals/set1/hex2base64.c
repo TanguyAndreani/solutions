@@ -11,7 +11,13 @@ char BASE64[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+
 int main(int argc, char *argv[])
 {
     if (argc == 2 && argv[1][0] != '-') {
-        print_bytes2base64(argv[1], strlen(argv[1]));
+        char *b64 = bytes2base64(argv[1], strlen(argv[1]));
+        if (!b64)
+            return (1);
+
+        printf("%s\n", b64);
+
+        free(b64);
     }
 
     else if (argc == 3 && !strcmp(argv[1], "-x")) {
@@ -20,7 +26,14 @@ int main(int argc, char *argv[])
         if (!bytes)
             return (1);
 
-        print_bytes2base64(bytes, len);
+        char *b64 = bytes2base64(bytes, len);
+        if (!b64)
+            return (1);
+
+        printf("%s\n", b64);
+
+        free(b64);
+
         free(bytes);
     }
 
@@ -55,9 +68,14 @@ int main(int argc, char *argv[])
     putchar('\n');
 }*/
 
-void print_bytes2base64(char *bytes, int len)
+char *bytes2base64(char *bytes, int len)
 {
+    char *buf = malloc(len * (4.0/3.0) + 1);
+    if (!buf)
+        return NULL;
+
     int i = 0;
+    int buf_idx = 0;
     for (; i < len; i += 3) {
         int bs[3];
         bs[0] = bytes[i];
@@ -70,13 +88,15 @@ void print_bytes2base64(char *bytes, int len)
         ss[2] = ((bs[1] & 15) << 2) + (bs[2] >> 6);
         ss[3] = bs[2] & 63;
 
-        putchar(BASE64[ss[0]]);
-        putchar(BASE64[ss[1]]);
-        putchar((i + 1 >= len) ? '=' : BASE64[ss[2]]);
-        putchar((i + 2 >= len) ? '=' : BASE64[ss[3]]);
+        buf[buf_idx++] = BASE64[ss[0]];
+        buf[buf_idx++] = BASE64[ss[1]];
+        buf[buf_idx++] = (i + 1 >= len) ? '=' : BASE64[ss[2]];
+        buf[buf_idx++] = (i + 2 >= len) ? '=' : BASE64[ss[3]];
     }
 
-    putchar('\n');
+    buf[buf_idx] = '\0';
+
+    return buf;
 }
 
 void print_usage(char *progname)

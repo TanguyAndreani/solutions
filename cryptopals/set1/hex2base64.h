@@ -5,7 +5,7 @@
  * takes three bytes, divide them into four six bits chunks, and
  * output the corresponding char in BASE64
  */
-void print_bytes2base64(char *bytes, int len);
+char *bytes2base64(char *bytes, int len);
 
 void print_usage(char *progname);
 
