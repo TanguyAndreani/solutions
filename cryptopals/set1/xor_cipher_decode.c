@@ -80,16 +80,26 @@ float compute_score(float *sentence_frequencies, float *language_frequencies, ch
     return score;
 }
 
-void xor_decode(char *s, int slen, char *alphabet, float *language_frequencies)
+struct decoded {
+    int key;
+    float score;
+    char *text;
+};
+
+struct decoded *xor_decode(char *s, int slen, char *alphabet, float *language_frequencies)
 {
     float scores[256];
     for (int i = 0; i < 256; i++)
         scores[i] = 999.0;
 
+    struct decoded *result = malloc(sizeof(struct decoded));
+    if (!result)
+        return NULL;
+
     int bufsize = slen + 1;
     char *buf = malloc(bufsize);
     if (!buf)
-        return;
+        return NULL;
     memset(buf, 0, bufsize);
 
     for (int key = 0; key < 255; key++) {
@@ -129,28 +139,29 @@ next:
 
     if (scores[min_score_key] >= limit) {
         free(buf);
-        return;
+        return NULL;
     }
 
     for (int i = 0; i < slen; i++) {
         buf[i] = s[i] ^ min_score_key;
     }
 
-    char *format = "%d\n%f\n%s\n";
-    printf(format, min_score_key, scores[min_score_key], buf);
+    result->text = buf;
+    result->key = min_score_key;
+    result->score = scores[min_score_key];
 
-    free(buf);
+    return result;
 }
 
 int main(int argc, char *argv[])
 {
     if (argc != 2)
-        return 1;
+        return 3;
 
     int bytes_count;
     char *bytes = hex_decode(argv[1], &bytes_count);
     if (!bytes) {
-        return 1;
+        return 2;
     }
 
     char *alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -158,7 +169,14 @@ int main(int argc, char *argv[])
     float english_frequencies[256] = {};
     fill_with_english_frequencies(english_frequencies);
 
-    xor_decode(bytes, bytes_count, alphabet, english_frequencies);
+    struct decoded *x = xor_decode(bytes, bytes_count, alphabet, english_frequencies);
+    if (!x)
+        return 1;
+
+    printf("%d\n%f\n%s\n", x->key, x->score, x->text);
+
+    free(x->text);
+    free(x);
 
     free(bytes);
 
