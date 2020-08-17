@@ -1,3 +1,5 @@
-./xor_cipher_detect data/4.txt
+./xor_cipher_detect data/4.txt 500
 0
-{"key":53,"score":0.558333,"text":"Now that the party is jumping","line":171}
+53
+0.558333
+Now that the party is jumping

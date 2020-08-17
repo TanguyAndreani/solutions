@@ -12,5 +12,6 @@ int count_letter(char *s, char letter);
 void compute_frequency(char *s, char *letters, float *dest);
 float compute_score(float *sentence_frequencies, float *language_frequencies, char *letters);
 struct decoded *xor_decode(char *s, int slen, char *alphabet, float *language_frequencies);
+void fill_with_english_frequencies(float *tab);
 
 #endif

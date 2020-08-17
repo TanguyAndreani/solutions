@@ -1,3 +1,4 @@
 fixed-xor
 hex2base64
 xor_cipher_decode
+xor_cipher_detect
