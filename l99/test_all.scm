@@ -55,3 +55,17 @@
 (assert 'my-reverse-simple
         (equal? (my-reverse '(tanguy is name my world hello))
                 '(hello world my name is tanguy)))
+
+(assert 'is-palindrom-yes
+        (is-palindrom '(a b b a)))
+
+(assert 'is-palindrom-no
+        (not (is-palindrom '(a b b b))))
+
+(assert 'my-flatten-problem-example
+        (equal? (my-flatten '(a (b (c d) e)))
+                '(a b c d e)))
+
+(assert 'my-flatten-problem-example
+        (equal? (my-flatten '(((a b c d))))
+                '(a b c d)))
