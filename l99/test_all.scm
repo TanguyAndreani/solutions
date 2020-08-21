@@ -33,23 +33,23 @@
     ((_ name expr) (assert-helper name 'expr expr))))
 
 (assert 'my-last-normal-list
-  (equal? (my-last '(1 2 3 4))
-          '(4)))
+        (equal? (my-last '(1 2 3 4))
+                '(4)))
 (assert 'my-last-single-element
-  (equal? (my-last '(1))
-          '(1)))
+        (equal? (my-last '(1))
+                '(1)))
 
 
 (assert 'my-but-last-normal-list
-  (equal? (my-but-last '(1 2 3 4))
-          '(4)))
+        (equal? (my-but-last '(1 2 3 4))
+                '(4)))
 (assert 'my-but-last-single-element
-  (equal? (my-but-last '(1 2))
-          '(1 2)))
+        (equal? (my-but-last '(1 2))
+                '(1 2)))
 
 (assert 'element-at-element-exit
-  (equal? (element-at '(4 3 2 1) 3)
-          2))
+        (equal? (element-at '(4 3 2 1) 3)
+                2))
 
 (assert 'my-reverse-simple
         (equal? (my-reverse '(tanguy is name my world hello))
