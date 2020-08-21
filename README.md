@@ -1,6 +1,8 @@
 # solutions
 
-![C/C++ CI](https://github.com/TanguyAndreani/solutions/workflows/build/badge.svg)
+![l99](https://github.com/TanguyAndreani/solutions/workflows/l99/badge.svg)
+![cryptopals](https://github.com/TanguyAndreani/solutions/workflows/cryptopals/badge.svg)
+![project euler](https://github.com/TanguyAndreani/solutions/workflows/projecteuler/badge.svg)
 
 ## DESCRIPTION
 
