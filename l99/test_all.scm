@@ -69,3 +69,7 @@
 (assert 'my-flatten-problem-example
         (equal? (my-flatten '(((a b c d))))
                 '(a b c d)))
+
+(assert 'compress-problem-example
+        (equal? (compress '(a a a a b c c a a d e e e e))
+                '(a b c a d e)))

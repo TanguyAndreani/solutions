@@ -60,3 +60,16 @@
     (else
      (cons (car ls)
            (my-flatten (cdr ls))))))
+
+;(**) Eliminate consecutive duplicates of list elements.
+;     If a list contains repeated elements they should be replaced with a single copy of the element. The order of the elements should not be changed.
+;
+;     Example:
+;     * (compress '(a a a a b c c a a d e e e e))
+;     (A B C A D E)
+(define (compress ls)
+  (if (or (null? ls) (null? (cdr ls)))
+      ls
+      (if (equal? (car ls) (cadr ls))
+          (compress (cdr ls))
+          (cons (car ls) (compress (cdr ls))))))
