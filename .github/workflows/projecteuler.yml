@@ -15,5 +15,3 @@ jobs:
     - uses: actions/checkout@v2
     - name: make -C projecteuler
       run: make -C projecteuler
-    - name: make -C projecteuler test_suite; ./projecteuler/test_suite
-      run: make -C projecteuler test_suite; ./projecteuler/test_suite
