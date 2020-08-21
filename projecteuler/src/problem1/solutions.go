@@ -1,7 +1,5 @@
 package problem1
 
-/* The most obvious solution */
-
 func obviousSolution(n int) int {
 	sum := 0
 	for i := 0; i < n; i++ {
@@ -11,8 +9,6 @@ func obviousSolution(n int) int {
 	}
 	return sum
 }
-
-/* The solution I came up with, I just tried to get read of as many modulos */
 
 func mySolution(n int) int {
 	sum := 0
@@ -28,8 +24,6 @@ func mySolution(n int) int {
 
 	return sum
 }
-
-/* The optimal solution */
 
 func sumUpto(n int) int {
 	return (n * (n + 1)) / 2
