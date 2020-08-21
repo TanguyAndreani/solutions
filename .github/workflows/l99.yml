@@ -1,0 +1,19 @@
+name: l99
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+    - 'l99/**'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: install racket
+      run: sudo add-apt-repository ppa:plt/racket && sudo apt-get update && sudo apt install racket -y
+    - name: l99 tests
+      run: (cd l99; plt-r5rs test_all.scm) | grep -v failed

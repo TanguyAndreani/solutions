@@ -1,0 +1,19 @@
+name: cryptopals
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+    - 'cryptopals/**'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: make -C cryptopals/set1
+      run: make -C cryptopals/set1
+    - name: cd cryptopals/set1; ./run_test.sh
+      run: cd cryptopals/set1; ./run_test.sh
