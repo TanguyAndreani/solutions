@@ -17,7 +17,16 @@
         (display 'failed)
         (newline)
         (display quoted-expr)
-        (newline))))
+        (newline)
+        (if (eq? (car quoted-expr) 'equal?)
+            (begin
+              (display "Got")
+              (space!)
+              (display (eval (cadr quoted-expr) (interaction-environment)))
+              (newline)
+              (display "Expected")
+              (space!)
+              (display (eval (caddr quoted-expr) (interaction-environment))))))))
 
 (define-syntax assert
   (syntax-rules ()
@@ -41,3 +50,7 @@
 (assert 'element-at-element-exit
   (equal? (element-at '(4 3 2 1) 3)
           2))
+
+(assert 'my-reverse-simple
+        (equal? (my-reverse '(tanguy is name my world hello))
+                '(hello world my name is tanguy)))

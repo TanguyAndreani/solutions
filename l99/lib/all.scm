@@ -31,3 +31,9 @@
   (if (null? ls)
       0
       (+ 1 (my-length (cdr ls)))))
+
+;(*) Reverse a list
+(define (my-reverse ls)
+  (if (null? ls)
+      '()
+      (append (my-reverse (cdr ls)) (list (car ls)))))
