@@ -10,11 +10,11 @@ func obviousSolution(n int) int {
 		n1 = n1 + n2
 		n2 = n1 + n2
 
-		if n1 % 2 == 0 {
+		if n1%2 == 0 {
 			sum += n1
 		}
 
-		if n2 % 2 == 0 {
+		if n2%2 == 0 {
 			sum += n2
 		}
 	}
@@ -30,7 +30,7 @@ func mySolution(n int) int {
 	for n1 < n {
 		old_n1 := n1
 		sum += n1
-		n1 = n1 + n2 * 2
+		n1 = n1 + n2*2
 		n2 = n1 + n2 + old_n1
 	}
 
