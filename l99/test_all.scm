@@ -35,14 +35,15 @@
 (assert 'my-last-normal-list
         (equal? (my-last '(1 2 3 4))
                 '(4)))
+
 (assert 'my-last-single-element
         (equal? (my-last '(1))
                 '(1)))
 
-
 (assert 'my-but-last-normal-list
         (equal? (my-but-last '(1 2 3 4))
                 '(4)))
+
 (assert 'my-but-last-single-element
         (equal? (my-but-last '(1 2))
                 '(1 2)))
