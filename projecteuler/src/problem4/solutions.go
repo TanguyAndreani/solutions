@@ -4,11 +4,11 @@ func competitiveSolution(n int) int {
 	/* if n = 3, max = 999 */
 	max := 0
 	for i := 1; i <= n; i++ {
-		max = max * 10 + 9
+		max = max*10 + 9
 	}
 
 	/* if n = 3, min = 999/10 + 1 = 100 */
-	min := 1 + max / 10
+	min := 1 + max/10
 
 	result := 0
 	for i := max; i >= min; i-- {
@@ -26,7 +26,7 @@ func competitiveSolution(n int) int {
 			tmp := prod
 			reverse := 0
 			for tmp != 0 {
-				reverse = reverse * 10 + tmp % 10
+				reverse = reverse*10 + tmp%10
 				tmp /= 10
 			}
 
@@ -43,7 +43,7 @@ func competitiveSolution(n int) int {
 func unoptimizedSolution(n int) int {
 	max := 0
 	for i := 1; i <= n; i++ {
-		max = max * 10 + 9
+		max = max*10 + 9
 	}
 
 	result := 0
@@ -54,7 +54,7 @@ func unoptimizedSolution(n int) int {
 			tmp := prod
 			reverse := 0
 			for tmp != 0 {
-				reverse = reverse * 10 + tmp % 10
+				reverse = reverse*10 + tmp%10
 				tmp /= 10
 			}
 
