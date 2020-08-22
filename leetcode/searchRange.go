@@ -2,7 +2,7 @@
  * Complexity should be about O(log(n) + k), we do a binary search to find target in nums[], then we go one step for each occurence of target in nums[]
  */
 
-package searchrange
+package leetcode
 
 func max(a int, b int) int {
 	if a > b {
