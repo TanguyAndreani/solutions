@@ -4,8 +4,6 @@
 
 ## Chapter 1 - Tutorial
 
-Exercises for this chapter are on page 8 of the book.
-
 **Exercise 1.1**: Modify the echo program to also print `os.Args[0]`, the name of the command that invoked it.
 
 **Solution**: Just change `os.Args[1:]` to `os.Args[0:]` which can then be
@@ -42,7 +40,3 @@ func run_times(f func(), n int) {
   }
 }
 ```
-
-## Calendar
-
-- 10.08.2020 1.1-1.3

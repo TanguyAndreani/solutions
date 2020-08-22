@@ -14,12 +14,19 @@ Feel free to email me (See my GitHub profile) if you want me to help.
 
 ### Books
 
-Items which are not clickable represeng books I plan on doing.
+Books I plan on doing:
 
-- [The Go Programming Language](books/tgpl.markdown)
 - Lisp in Small Pieces
 - Operating Systeme: Three Easy Pieces
 - The Algorithms Design Manual (in a separate repo)
+
+#### The Go Programming Language
+
+[Solutions file](books/tgpl.markdown)
+
+|Exercises range|Page|Date|
+|---------------|----|----|
+|1.1-1.3|8|2020.08.10|
 
 ### Cryptopals
 
