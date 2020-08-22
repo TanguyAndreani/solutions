@@ -1,7 +1,4 @@
 /*
- * Runtime: 4 ms, faster than 99.45% of Go online submissions for Find First and Last Position of Element in Sorted Array.
- * Memory Usage: 4.1 MB, less than 99.73% of Go online submissions for Find First and Last Position of Element in Sorted Array.
- *
  * Complexity should be about O(log(n) + k), we do a binary search to find target in nums[], then we go one step for each occurence of target in nums[]
  */
 
@@ -39,6 +36,8 @@ func searchRange(nums []int, target int) []int {
 			return result
 		}
 
+		/* when we reach the point when steps can't be smaller, coming across two numbers
+		respectively greater than and less than target means that we won't find target in nums[] */
 		if g == 1 && ((old_n < target && target < nums[i]) || (old_n > target && target > nums[i])) {
 			return result
 		}
@@ -54,12 +53,11 @@ func searchRange(nums []int, target int) []int {
 		i--
 	}
 
-	result[0] = i
-
 	for j < len(nums)-1 && nums[j+1] == target {
 		j++
 	}
 
+	result[0] = i
 	result[1] = j
 
 	return result

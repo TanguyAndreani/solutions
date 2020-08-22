@@ -42,6 +42,7 @@ Books I plan on doing:
 |Problem|Solution|Faster than|Approx. time spent|Complexity<sup>\*</sup>|Date|
 |-------|--------|-----------|------------------|----------|----|
 |[Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array)|[searchRange.go](https://github.com/TanguyAndreani/solutions/tree/master/leetcode/searchRange.go)|99.45% (4ms)|60min|O(lg(n) + k)|2020.08.22|
+|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|[lengthOfLongestSubstring.go](https://github.com/TanguyAndreani/solutions/tree/master/leetcode/lengthOfLongestSubstring.go)|93.38% (4 s)|27min|O(N<sup>2</sup>)|2020.08.22|
 
 <sup>\*</sup> May not be accurate, feel free to correct.
 
