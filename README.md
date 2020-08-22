@@ -39,6 +39,8 @@ Books I plan on doing:
 
 ### Leetcode
 
+The *Faster than* entry is there to give an idea. The measurement is not accurate and could make one to believe that my solutions are close to optimal. Which they probably aren't in most cases. So beware and run benchmarks when in doubt.
+
 |Problem|Solution|Faster than|Approx. time spent|Complexity<sup>\*</sup>|Date|
 |-------|--------|-----------|------------------|----------|----|
 |[Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array)|[searchRange.go](https://github.com/TanguyAndreani/solutions/tree/master/leetcode/searchRange.go)|99.45% (4ms)|60min|O(lg(n) + k)|2020.08.22|
