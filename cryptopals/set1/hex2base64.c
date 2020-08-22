@@ -11,36 +11,45 @@ int main(int argc, char *argv[])
 {
     if (argc == 2 && argv[1][0] != '-') {
         char *b64 = bytes2base64(argv[1], strlen(argv[1]));
-        if (!b64)
-            return (1);
+        if (!b64) {
+            return 1;
+        }
 
-        printf("%s\n", b64);
+        (void)printf("%s\n", b64);
 
         free(b64);
+
+        return 0;
     }
 
     else if (argc == 3 && !strcmp(argv[1], "-x")) {
         int len;
         char *bytes = hex_decode(argv[2], &len);
-        if (!bytes)
+        if (!bytes) {
             return (1);
+        }
 
         char *b64 = bytes2base64(bytes, len);
-        if (!b64)
+        if (!b64) {
             return (1);
+        }
 
-        printf("%s\n", b64);
+        (void)printf("%s\n", b64);
 
         free(b64);
 
         free(bytes);
+
+        return 0;
     }
 
     else if (argc >= 2 && !strcmp(argv[1], "-h")) {
         print_usage(argv[0]);
+        return 0;
     }
 
-    return (0);
+    print_usage(argv[0]);
+    return 1;
 }
 
 void print_usage(char *progname)

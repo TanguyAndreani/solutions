@@ -67,17 +67,20 @@ float compute_score(float *sentence_frequencies, float *language_frequencies, ch
 struct decoded *xor_decode(char *s, int slen, char *alphabet, float *language_frequencies)
 {
     float scores[256];
-    for (int i = 0; i < 256; i++)
+    for (int i = 0; i < 256; i++) {
         scores[i] = 999.0;
+    }
 
     struct decoded *result = malloc(sizeof(struct decoded));
-    if (!result)
+    if (!result) {
         return NULL;
+    }
 
     int bufsize = slen + 1;
     char *buf = malloc(bufsize);
-    if (!buf)
+    if (!buf) {
         return NULL;
+    }
     memset(buf, 0, bufsize);
 
     for (int key = 0; key < 255; key++) {
@@ -94,8 +97,9 @@ struct decoded *xor_decode(char *s, int slen, char *alphabet, float *language_fr
             buf[j] = dec_c;
         }
 
-        if (!has_space)
+        if (!has_space) {
             goto next;
+        }
 
         float sentence_frequencies[256] = {0};
         compute_frequency(buf, alphabet, sentence_frequencies);

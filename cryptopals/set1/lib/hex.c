@@ -12,8 +12,9 @@ char *hex_decode(char *str, int *bytes_count)
     int result_len = len / 2 + 1;
 
     char *bytes = malloc(result_len);
-    if (!bytes)
+    if (!bytes) {
         return (NULL);
+    }
 
     int j = 0;
     for (int i = 0; i < len - 1; i += 2, j++) {
@@ -24,7 +25,7 @@ char *hex_decode(char *str, int *bytes_count)
     bytes[j] = '\0';
     *bytes_count = j;
 
-    return (bytes);
+    return bytes;
 }
 
 char *hex_encode(char *str, int *bytes_count, int len)
@@ -32,8 +33,9 @@ char *hex_encode(char *str, int *bytes_count, int len)
     int result_len = len * 2 + 1;
 
     char *bytes = malloc(result_len);
-    if (!bytes)
-        return (NULL);
+    if (!bytes) {
+        return NULL;
+    }
 
     int j = 0, i = 0;
     for (; i < result_len - 1; i += 2, j++) {
@@ -44,5 +46,5 @@ char *hex_encode(char *str, int *bytes_count, int len)
     bytes[i] = '\0';
     *bytes_count = i;
 
-    return (bytes);
+    return bytes;
 }

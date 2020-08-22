@@ -8,13 +8,14 @@
 
 int main(int argc, char *argv[])
 {
-    if (argc != 2)
-        return 3;
+    if (argc != 2) {
+        return 1;
+    }
 
     int bytes_count;
     char *bytes = hex_decode(argv[1], &bytes_count);
     if (!bytes) {
-        return 2;
+        return 1;
     }
 
     char *alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -23,10 +24,11 @@ int main(int argc, char *argv[])
     fill_with_english_frequencies(english_frequencies);
 
     struct decoded *x = xor_decode(bytes, bytes_count, alphabet, english_frequencies);
-    if (!x)
+    if (!x) {
         return 1;
+    }
 
-    printf("%d\n%f\n%s\n", x->key, x->score, x->text);
+    (void)printf("%d\n%f\n%s\n", x->key, x->score, x->text);
 
     free(x->text);
     free(x);

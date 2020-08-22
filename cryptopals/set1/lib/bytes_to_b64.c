@@ -5,8 +5,9 @@ char BASE64[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz012345678
 char *bytes2base64(char *bytes, int len)
 {
     char *buf = malloc(len * (4.0/3.0) + 1);
-    if (!buf)
+    if (!buf) {
         return NULL;
+    }
 
     int i = 0;
     int buf_idx = 0;
