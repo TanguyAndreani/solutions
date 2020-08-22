@@ -37,6 +37,14 @@ Books I plan on doing:
 |1|3|[Single-byte XOR cipher](https://cryptopals.com/sets/1/challenges/3)|[/cryptopals/set1](https://github.com/TanguyAndreani/solutions/tree/master/cryptopals/set1)|C|2020.07.12|
 |1|4|[Detect single-character XOR](https://cryptopals.com/sets/1/challenges/4)|[/cryptopals/set1](https://github.com/TanguyAndreani/solutions/tree/master/cryptopals/set1)|C|2020.07.13|
 
+### Leetcode
+
+|Problem|Solution|Faster than|Approx. time spent|Complexity<sup>\*</sup>|Date|
+|-------|--------|-----------|------------------|----------|----|
+|[Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array)|[searchRange.go](https://github.com/TanguyAndreani/solutions/tree/master/leetcode/searchRange.go)|99.45% (4ms)|60min|O(lg(n) + k)|2020.08.22|
+
+<sup>\*</sup> May not be accurate, feel free to correct.
+
 ### Project Euler
 
 ![](https://projecteuler.net/profile/lmbdfn.png)
