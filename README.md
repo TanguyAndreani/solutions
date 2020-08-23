@@ -121,7 +121,10 @@ Just discovered an old account :) [My solutions](https://exercism.io/profiles/Ta
 
 ### 99 Lisp Problems
 
-[Link](https://www.ic.unicamp.br/~meidanis/courses/mc336/2006s2/funcional/L-99_Ninety-Nine_Lisp_Problems.html)
+A series of exercises targeted at Lisp programmers.
+
+- [The exercises](https://www.ic.unicamp.br/~meidanis/courses/mc336/2006s2/funcional/L-99_Ninety-Nine_Lisp_Problems.html)
+- [My solutions](https://github.com/TanguyAndreani/solutions/tree/master/l99)
 
 #### By date
 
