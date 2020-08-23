@@ -49,6 +49,8 @@ When you see a benchmark like "Faster than 100% (0ms)", it's usually that everyo
 |[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|[lengthOfLongestSubstring.go](https://github.com/TanguyAndreani/solutions/tree/master/leetcode/lengthOfLongestSubstring.go)|93.38% (4ms)|27min|O(n<sup>2</sup>)|2020.08.22|
 |[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|[myAtoi.go](https://github.com/TanguyAndreani/solutions/tree/master/leetcode/myAtoi.go)|100% (0ms)|10min|O(n)|2020.08.22|
 |[Palindrome Number](https://leetcode.com/problems/palindrome-number)|[isPalindrome.go](https://github.com/TanguyAndreani/solutions/tree/master/leetcode/isPalindrome.go)|72.57% (16ms)|12min|O(n)|2020.08.22|
+|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)|[isMatch.go](https://github.com/TanguyAndreani/solutions/tree/master/leetcode/isMatch.go)|23.98% (20ms)|>4h|O(?)|2020.08.23|
+
 
 <!--
 |[]()|[.go](https://github.com/TanguyAndreani/solutions/tree/master/leetcode/.go)|||O()|2020.08.22|
