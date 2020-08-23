@@ -32,10 +32,10 @@ Books I plan on doing:
 
 |Set|Challenge|Link|Solution|Language|Completed on|
 | - | ------- | -- | ------ | ------ | ---------- |
-|1|1|[Convert hex to base64](https://cryptopals.com/sets/1/challenges/1)|[/cryptopals/set1](https://github.com/TanguyAndreani/solutions/tree/master/cryptopals/set1)|C|2020.07.10|
-|1|2|[Fixed XOR](https://cryptopals.com/sets/1/challenges/2)|[/cryptopals/set1](https://github.com/TanguyAndreani/solutions/tree/master/cryptopals/set1)|C|2020.07.11|
-|1|3|[Single-byte XOR cipher](https://cryptopals.com/sets/1/challenges/3)|[/cryptopals/set1](https://github.com/TanguyAndreani/solutions/tree/master/cryptopals/set1)|C|2020.07.12|
-|1|4|[Detect single-character XOR](https://cryptopals.com/sets/1/challenges/4)|[/cryptopals/set1](https://github.com/TanguyAndreani/solutions/tree/master/cryptopals/set1)|C|2020.07.13|
+|1|1|[Convert hex to base64](https://cryptopals.com/sets/1/challenges/1)|[/cryptopals/set1](https://github.com/TanguyAndreani/cryptopals/tree/master/set1)|C|2020.07.10|
+|1|2|[Fixed XOR](https://cryptopals.com/sets/1/challenges/2)|[/cryptopals/set1](https://github.com/TanguyAndreani/cryptopals/tree/master/set1)|C|2020.07.11|
+|1|3|[Single-byte XOR cipher](https://cryptopals.com/sets/1/challenges/3)|[/cryptopals/set1](https://github.com/TanguyAndreani/cryptopals/tree/master/set1)|C|2020.07.12|
+|1|4|[Detect single-character XOR](https://cryptopals.com/sets/1/challenges/4)|[/cryptopals/set1](https://github.com/TanguyAndreani/cryptopals/tree/master/set1)|C|2020.07.13|
 
 ### Leetcode
 
@@ -45,15 +45,15 @@ When you see a benchmark like "Faster than 100% (0ms)", it's usually that everyo
 
 |Problem|Solution|Faster than|Approx. time spent|Complexity<sup>\*</sup>|Date|
 |-------|--------|-----------|------------------|----------|----|
-|[Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array)|[searchRange.go](https://github.com/TanguyAndreani/solutions/tree/master/leetcode/searchRange.go)|99.45% (4ms)|60min|O(lg(n) + k)|2020.08.22|
-|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|[lengthOfLongestSubstring.go](https://github.com/TanguyAndreani/solutions/tree/master/leetcode/lengthOfLongestSubstring.go)|93.38% (4ms)|27min|O(n<sup>2</sup>)|2020.08.22|
-|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|[myAtoi.go](https://github.com/TanguyAndreani/solutions/tree/master/leetcode/myAtoi.go)|100% (0ms)|10min|O(n)|2020.08.22|
-|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|[isPalindrome.go](https://github.com/TanguyAndreani/solutions/tree/master/leetcode/isPalindrome.go)|72.57% (16ms)|12min|O(n)|2020.08.22|
-|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)|[isMatch.go](https://github.com/TanguyAndreani/solutions/tree/master/leetcode/isMatch.go)|23.98% (20ms)|>4h|O(?)|2020.08.23|
+|[Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array)|[searchRange.go](https://github.com/TanguyAndreani/leetcode/tree/master/searchRange.go)|99.45% (4ms)|60min|O(lg(n) + k)|2020.08.22|
+|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|[lengthOfLongestSubstring.go](https://github.com/TanguyAndreani/leetcode/tree/master/lengthOfLongestSubstring.go)|93.38% (4ms)|27min|O(n<sup>2</sup>)|2020.08.22|
+|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|[myAtoi.go](https://github.com/TanguyAndreani/leetcode/tree/master/myAtoi.go)|100% (0ms)|10min|O(n)|2020.08.22|
+|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|[isPalindrome.go](https://github.com/TanguyAndreani/leetcode/tree/master/isPalindrome.go)|72.57% (16ms)|12min|O(n)|2020.08.22|
+|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)|[isMatch.go](https://github.com/TanguyAndreani/leetcode/tree/master/isMatch.go)|23.98% (20ms)|>4h|O(?)|2020.08.23|
 
 
 <!--
-|[]()|[.go](https://github.com/TanguyAndreani/solutions/tree/master/leetcode/.go)|||O()|2020.08.22|
+|[]()|[.go](https://github.com/TanguyAndreani/leetcode/tree/master/.go)|||O()|2020.08.22|
 -->
 
 <sup>\*</sup> May not be accurate, feel free to correct.
@@ -66,10 +66,10 @@ If you want to add me as a friend on Project Euler, send an email with your key.
 
 |Problem|Link|Solution|Completed on|
 | ------- | -- | ------ | ---------- |
-|1|[Multiples of 3 and 5](https://projecteuler.net/problem=1)|[/projecteuler](https://github.com/TanguyAndreani/solutions/tree/master/projecteuler/src/problem1)|2020.07.11|
-|2|[Even Fibonacci numbers](https://projecteuler.net/problem=2)|[/projecteuler](https://github.com/TanguyAndreani/solutions/tree/master/projecteuler/src/problem2)|2020.07.11|
-|3|[Largest Prime Factor](https://projecteuler.net/problem=3)|[/projecteuler](https://github.com/TanguyAndreani/solutions/tree/master/projecteuler/src/problem3)|2020.07.13|
-|3|[Largest palindrome product](https://projecteuler.net/problem=4)|[/projecteuler](https://github.com/TanguyAndreani/solutions/tree/master/projecteuler/src/problem4)|2020.08.22|
+|1|[Multiples of 3 and 5](https://projecteuler.net/problem=1)|[/projecteuler](https://github.com/TanguyAndreani/euler/tree/master/src/problem1)|2020.07.11|
+|2|[Even Fibonacci numbers](https://projecteuler.net/problem=2)|[/projecteuler](https://github.com/TanguyAndreani/euler/tree/master/src/problem2)|2020.07.11|
+|3|[Largest Prime Factor](https://projecteuler.net/problem=3)|[/projecteuler](https://github.com/TanguyAndreani/euler/tree/master/src/problem3)|2020.07.13|
+|3|[Largest palindrome product](https://projecteuler.net/problem=4)|[/projecteuler](https://github.com/TanguyAndreani/euler/tree/master/src/problem4)|2020.08.22|
 
 ### Root-Me.Org
 
@@ -124,7 +124,7 @@ Just discovered an old account :) [My solutions](https://exercism.io/profiles/Ta
 A series of exercises targeted at Lisp programmers.
 
 - [The exercises](https://www.ic.unicamp.br/~meidanis/courses/mc336/2006s2/funcional/L-99_Ninety-Nine_Lisp_Problems.html)
-- [My solutions](https://github.com/TanguyAndreani/solutions/tree/master/l99)
+- [My solutions](https://github.com/TanguyAndreani/lisp99)
 
 #### By date
 
