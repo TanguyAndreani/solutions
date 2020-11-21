@@ -50,6 +50,7 @@ When you see a benchmark like "Faster than 100% (0ms)", it's usually that everyo
 |[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|[myAtoi.go](https://github.com/TanguyAndreani/leetcode/tree/master/myAtoi.go)|100% (0ms)|10min|O(n)|2020.08.22|
 |[Palindrome Number](https://leetcode.com/problems/palindrome-number)|[isPalindrome.go](https://github.com/TanguyAndreani/leetcode/tree/master/isPalindrome.go)|72.57% (16ms)|12min|O(n)|2020.08.22|
 |[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)|[isMatch.go](https://github.com/TanguyAndreani/leetcode/tree/master/isMatch.go)|23.98% (20ms)|>4h|O(?)|2020.08.23|
+|[Reverse integer](https://leetcode.com/problems/reverse-integer/)|[reverseInteger.go](https://github.com/TanguyAndreani/leetcode/tree/master/reverseInteger.go)|100% (0ms)|20-30min|O(N)|2020.11.21|
 
 
 <!--
