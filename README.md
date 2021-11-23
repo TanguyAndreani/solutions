@@ -146,4 +146,4 @@ A series of exercises targeted at Lisp programmers.
 
 See [ctf/](https://github.com/TanguyAndreani/solutions/tree/master/ctf).
 
-- HeroCTF v3 (Early 2021, with @mariuscontoli)
+- HeroCTF v3 (Early 2021, with [@mariuscontoli](https://github.com/mariuscontoli))
