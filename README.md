@@ -141,3 +141,9 @@ A series of exercises targeted at Lisp programmers.
 | ------- | ------ |
 |fd|2020.07.18|
 |col|2020.07.18|
+
+### CTF I participated in
+
+See [ctf/](https://github.com/TanguyAndreani/solutions/tree/master/ctf).
+
+- HeroCTF v3 (Early 2021, with @mariuscontoli)
