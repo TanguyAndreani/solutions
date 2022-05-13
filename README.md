@@ -59,6 +59,17 @@ When you see a benchmark like "Faster than 100% (0ms)", it's usually that everyo
 
 <sup>\*</sup> May not be accurate, feel free to correct.
 
+### HackerRank
+
+*Just the challenges that are ranked from medium to hard.*
+
+
+|Problem|Solution|Complexity<sup>\*</sup>|Date|
+|-------|--------|-----------------------|----|
+|[Array Manipulation](https://www.hackerrank.com/challenges/crush/problem)|[array_manipulation](/hackerrank/array_manipulation)|O(N)|2022.05.06|
+
+<sup>\*</sup> May not be accurate, feel free to correct.
+
 ### Project Euler
 
 ![](https://projecteuler.net/profile/lmbdfn.png)
